@@ -1,8 +1,10 @@
 language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-  - node_modules
+
+os: osx
+
 script:
   - npm build:prod
+
+cache:
+  directories:
+    - node_modules
