@@ -2,9 +2,18 @@ language: node_js
 
 os: osx
 
+node_js:
+  - 10
+  - 8
+  
 script:
-  - npm build:prod
+  - yarn build:prod
+
+notifications:
+  email:
+    on_failure: change
 
 cache:
+  yarn: true
   directories:
     - node_modules
